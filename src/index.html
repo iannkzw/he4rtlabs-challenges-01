@@ -4,12 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Freela - He4rtDevs</title>
-    <link rel="stylesheet" href="./main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div>
-      <h1>Olá mundo.</h1>
-    </div>
-    <script src="./main.js"></script>
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col col-desktop-3"><img src="img/he4rtLogo.png" alt="Logo Heart"></div>
+          <div class="col col-desktop-9">
+            <nav>
+              <ul>
+                <li><a href="https://github.com/iannkzw">GitHub</a></li>
+                <li><a href="https://www.instagram.com/ian.nkz/">Instagram</a></li>
+                <li><a href="https://twitter.com/IanNakazawa">twitter</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col title">
+            <h1>Calculadora de Hora</h1>
+            <p>Para freelancers</p>
+            <hr/>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+         <div class="row conteudo">
+           <div class="col col-desktop-4"><img src="img/tempo.jpg" alt="Freelancer" ></div>
+           <div class="col col-desktop-8">
+             <form action="#">
+               <label for="valorProjeto">Valor do Projeto</label>
+                <input type="number" name="projeto" id="valorProjeto" required>
+               <label for="horasDiarias">Tempo Diário</label>
+                <input type="number" name="tempo" id="horasDiarias" required>
+               <label for="diasEfetivos">Dias Efetivos</label>
+                <input type="number" name="diasE" id="diasEfetivos" required>
+               <label for="diasFerias">Dias de Férias</label>
+                <input type="number" name="ferias" id="diasFerias" required>
+               <button type="submit" onclick="calcular()">Calcular</button>
+
+               <div class="result-calc" >Valor / hora:</div>
+               <div>
+                 <span class="span-calc" id="result"></span>
+               </div>
+             </form>
+           </div>
+         </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>Este desafio foi desenvolvido pelo grupo He4rt Developers para uso livre da comunidade. &copy <span class="name">ian.nkz</span></p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>
