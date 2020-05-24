@@ -1,6 +1,10 @@
 
 
 # Projeto 001 - Calculadora de hora p/ Freelas (1/3)
+
+
+
+# Projeto finalizado 
 ![interface image](https://github.com/iannkzw/he4rtlabs-challenges-01/blob/master/src/img/layout.png)
 
 Uma calculadora que irá te mostrar o valor da sua hora perante o freelance cotado.
